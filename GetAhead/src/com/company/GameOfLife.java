@@ -41,6 +41,21 @@ public class GameOfLife {
         return board[row][col];
     }
 
+    public boolean getCellState(int row, int col) {
+        return (board[row][col] && getNeighbours(row, col) == 2 ) || getNeighbours(row, col) == 3;
+    }
 
+    public boolean[][] getNextState() {
+
+        boolean[][] nextState = new boolean[size][size];
+
+        for (int i = 0; i < size ; i++) {
+            for (int j = 0; j < size; j++) {
+                nextState[i][j] = getCellState(i, j);
+            }
+        }
+
+        return  nextState;
+    }
 
 }

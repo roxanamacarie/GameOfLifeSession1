@@ -9,7 +9,7 @@ import org.junit.Test;
 public class GameOfLifeTest {
 
     @Test
-    public void firstTest() {
+    public void neighbourTest() {
 
         boolean[][] startState = {{true, false , false, false, true},
                                 {true, false , false, false, true},
@@ -33,4 +33,23 @@ public class GameOfLifeTest {
 
         Assert.assertEquals(0, neigh);
     }
+
+    @Test
+    public void inRangeTest() {
+
+        boolean[][] startState = {{true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true}};
+
+
+        GameOfLife gol = new GameOfLife(startState, 5);
+
+        Assert.assertTrue(gol.inRange(1, 1));
+        Assert.assertFalse(gol.inRange(-1, 7));
+        Assert.assertFalse(gol.inRange(1, -1));
+    }
+
+    
 }
