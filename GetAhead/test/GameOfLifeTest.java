@@ -51,5 +51,23 @@ public class GameOfLifeTest {
         Assert.assertFalse(gol.inRange(1, -1));
     }
 
+
+    @Test
+    public void isAliveTest() {
+
+        boolean[][] startState = {{true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true}};
+
+
+        GameOfLife gol = new GameOfLife(startState, 5);
+
+        Assert.assertTrue(gol.isAlive(0, 0));
+        Assert.assertFalse(gol.isAlive(1, 3));
+        Assert.assertFalse(gol.isAlive(4, 3));
+    }
     
+
 }
