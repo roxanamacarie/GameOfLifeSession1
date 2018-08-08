@@ -71,7 +71,7 @@ public class GameOfLifeTest {
 
 
     @Test
-    public void systemTest() {
+    public void systemTest1() {
 
         boolean[][] startState = {{true, false , false, false, true},
                 {true, false , false, false, true},
@@ -85,6 +85,32 @@ public class GameOfLifeTest {
                                     {true, true , false, true, true},
                                     {true, true , false, true, true},
                                     {false, false , false, false, false}};
+
+
+        GameOfLife gol = new GameOfLife(startState, 5);
+
+        boolean[][] nextState = gol.getNextState();
+
+        Assert.assertArrayEquals(expectedState, nextState);
+
+    }
+
+    @Test
+    public void systemTest2() {
+        int size = 5;
+        //boolean[][] startState = new boolean[size][size];
+
+        boolean[][] startState = {{true, false , false, false, true},
+                {true, false , true, true, false},
+                {true, true , false, false, false},
+                {true, false , false, true, true},
+                {true, true , false, false, true}};
+
+        boolean[][] expectedState = {{false, true , false, true, false},
+                {true, false , true, true, false},
+                {true, false , false, false, true},
+                {false, false , true, true, true},
+                {true, true , false, true, true}};
 
 
         GameOfLife gol = new GameOfLife(startState, 5);

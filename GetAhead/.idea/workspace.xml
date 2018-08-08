@@ -81,8 +81,8 @@
       <file leaf-file-name="GameOfLifeTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/GameOfLifeTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+            <state relative-caret-position="290">
+              <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="imports" expanded="true" />
@@ -571,15 +571,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 03m 16s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 12m 40s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 13m 08s.xml">
-      <configuration name="GameOfLifeTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 13m 29s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
@@ -599,6 +590,15 @@
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 29m 30s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 38m 44s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 44m 19s.xml">
+      <configuration name="GameOfLifeTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="GameOfLifeTest - 2018.08.08 at 15h 45m 30s.xml">
       <configuration name="GameOfLifeTest" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -984,8 +984,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/GameOfLifeTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="88" column="0" lean-forward="true" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+        <state relative-caret-position="290">
+          <caret line="113" column="0" lean-forward="true" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="imports" expanded="true" />
