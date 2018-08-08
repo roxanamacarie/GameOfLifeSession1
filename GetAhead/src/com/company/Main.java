@@ -17,14 +17,6 @@ public class Main {
         int width = 5;
         int height = 5;
 
-        GameOfLife gol = new GameOfLife(startState, width, height);
-        System.out.println("Before:");
-        gol.printState();
-
-        System.out.println("After:");
-        gol.updateState();
-
-        gol.printState();
 
     }
 }
