@@ -68,6 +68,30 @@ public class GameOfLifeTest {
         Assert.assertFalse(gol.isAlive(1, 3));
         Assert.assertFalse(gol.isAlive(4, 3));
     }
-    
 
+
+    @Test
+    public void systemTest() {
+
+        boolean[][] startState = {{true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true},
+                {true, false , false, false, true}};
+
+
+        boolean[][] expectedState = {{false, false , false, false, false},
+                                    {true, true , false, true, true},
+                                    {true, true , false, true, true},
+                                    {true, true , false, true, true},
+                                    {false, false , false, false, false}};
+
+
+        GameOfLife gol = new GameOfLife(startState, 5);
+
+        boolean[][] nextState = gol.getNextState();
+
+        Assert.assertArrayEquals(expectedState, nextState);
+
+    }
 }
