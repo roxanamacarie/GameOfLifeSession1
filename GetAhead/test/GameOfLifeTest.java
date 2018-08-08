@@ -11,11 +11,11 @@ public class GameOfLifeTest {
     @Test
     public void firstTest() {
 
-        int[][] startState = {{1, 0 , 0, 0, 1},
-                {0, 0 , 0, 0, 0},
-                {0, 0, 0, 0, 0},
-                {0, 0 , 0, 0, 0},
-                {1, 0 , 0, 0, 1}};
+        boolean[][] startState = {{true, false , false, false, true},
+                                {true, false , false, false, true},
+                                {true, false , false, false, true},
+                                {true, false , false, false, true},
+                                {true, false , false, false, true}};
 
 
         int[][] result = {{1, 0 , 0, 0, 1},
@@ -27,10 +27,10 @@ public class GameOfLifeTest {
         int width = 5;
         int height = 5;
 
-        GameOfLife gol = new GameOfLife();
+        GameOfLife gol = new GameOfLife(startState, 5);
 
-        int neigh = gol.getNeighbours(1, 1);
+        int neigh = gol.getNeighbours(1, 2);
 
-        Assert.assertEquals(neigh, 2);
+        Assert.assertEquals(0, neigh);
     }
 }
